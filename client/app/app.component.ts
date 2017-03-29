@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
+import { Component } from '@wwwalkerrun/nativescript-ngx-magic';
 import {
   DevToolsExtension,
   NgRedux
@@ -16,9 +17,10 @@ import { ToggleNavService } from './toggle-nav.service';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
   providers: [ToggleNavService]
 })
 export class AppComponent {
