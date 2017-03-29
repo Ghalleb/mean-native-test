@@ -17,7 +17,7 @@ import { ToggleNavService } from './toggle-nav.service';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
@@ -33,7 +33,8 @@ export class AppComponent {
     private ngRedux: NgRedux<IAppState>,
     private ngReduxRouter: NgReduxRouter,
     private epics: SessionEpics,
-    private ToggleNavService: ToggleNavService) {
+    private ToggleNavService: ToggleNavService
+  ) {
 
     middleware.push(createEpicMiddleware(this.epics.login));
 

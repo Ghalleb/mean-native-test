@@ -9,9 +9,10 @@ import {  IAppState} from '../../core/store';
 import { NgRedux } from '@angular-redux/store';
 
 @Component({
+  // moduleId: module.id,
   selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  templateUrl: 'login.component.html',
+  styleUrls: ['login.component.scss']
 })
 export class LoginComponent implements OnInit {
   returnUrl: string;
